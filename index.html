@@ -73,11 +73,50 @@
 					</ul>
 				</div>
 				<div class="login_button">
-					<a href="#">Login/ Sign Up</a>
+					<a id="provideLogin" href="#">Login / Sign Up</a>
 				</div>
 			</div>
 		</div>
 	</header>
+	<div class="login_popup" id="login_popup">
+		<div id="login_block">
+			<div class="login_header">
+				<span class="login_heading">Login Form</span><span id="login_close">&#10006;</span>
+			</div>
+			<div class="login_form">
+				<form class="form-grey-fields" action="login" method="post">
+						<input type="hidden" name="_token" value="GqaipJci68pHNDFqXWlHaDw49vT39wRx2WwbWDhi">
+						<div class="form-group">
+								<label class="sr-only">Email</label>
+								<input type="text" placeholder="Email Id or 10 digit Mobile number" class="form-control" name="email" required="">
+						</div>
+						<div class="form-group m-b-5">
+								<label class="sr-only">Password</label>
+								<input type="password" placeholder="Password" class="form-control" name="password" required="">
+						</div>
+						<div class="form-group form-inline text-left m-b-10 ">
+								<span>
+										<label>
+												<input type="checkbox" name="remember"><small> Remember me</small>
+										</label>
+								</span>
+								<span><a class="pull-right" href="https://www.deltalearn.in/password/email"><small>Lost your Password?</small></a></span>
+						</div>
+						<div>
+							<button type="submit" class="btn btn-default login_submit"><span><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Login</span></button>
+						</div>
+						<div>
+							<span style="line-height:50px;">
+								<strong>
+									New user? <a href="https://www.deltalearn.in/register" style="padding-top: 10px; padding-bottom: 10px">&nbsp;Register for free</a>
+								</strong>
+							</span>
+							<a href="https://www.deltalearn.in/facebook" class="btn btn-facebook pull-right facebook_button"><span><i class="fa fa-facebook"></i>&nbsp;&nbsp;Facebook</span></a>
+						</div>
+				</form>
+			</div>
+		</div>
+	</div>
 	<div class="pagecontent">
 		<div class="mainSlider">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -117,11 +156,35 @@
 				</a>
 			</div>
 		</div>
+		<div class="ourServices">
+			<div class="container">
+				<div class="serviceContent" style="background-color: #e84b3a;">
+					<div class="serviceImage"><i class="fa fa-cubes" aria-hidden="true"></i></div>
+					<div class="serviceText">Simple</div>
+				</div>
+				<div class="serviceContent" style="background-color: #ffc000;">
+					<div class="serviceImage"><i class="fa fa-object-group" aria-hidden="true"></i></div>
+					<div class="serviceText">Structured</div>
+				</div>
+				<div class="serviceContent" style="background-color: #74cee4;">
+					<div class="serviceImage"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
+					<div class="serviceText">Effective</div>
+				</div>
+				<div class="serviceContent" style="background-color: #fc7f0c;">
+					<div class="serviceImage"><i class="fa fa-inr" aria-hidden="true"></i></div>
+					<div class="serviceText">Affordable</div>
+				</div>
+				<div class="serviceContent" style="background-color: #92278f;">
+					<div class="serviceImage"><i class="fa fa-ravelry" aria-hidden="true"></i></div>
+					<div class="serviceText">Advanced</div>
+				</div>
+			</div>
+		</div>
 		<div class="ourcourses">
-			<div>
-				<div class="line-before"></div>
+			<div style="position: relative;text-align:center;">
+				<div class="line-before"> </div>
 				<h3 class="heading">Our Courses</h3>
-				<div class="line-after"></div>
+				<div class="line-after"> </div>
 			</div>
 			<div class="courses_block container">
 				<div class="course_sub_block cbsc_block">
@@ -143,9 +206,9 @@
 			</div>
 		</div>
 		<div class="ourstatistics">
-			<div>
+			<div style="text-align: center;">
 				<div class="line-before"></div>
-				<h3 class="heading" style="color:#fff;text-align:center;font-family:Lobster;">Our Statistics</h3>
+				<h3 class="heading" style="display:inline-block;color:#fff;text-align:center;font-family:Lobster;">Our Statistics</h3>
 				<div class="line-after"></div>
 			</div>
 			<div class="statistics_block container">
@@ -182,9 +245,9 @@
 			</div>
 		</div>
 		<div class="ouractivities">
-			<div style="padding: 20px 0;">
+			<div style="padding: 20px 0;text-align:center;">
 				<div class="line-before"></div>
-				<h3 class="heading" style="color:#333;text-align:center;font-family:Lobster;">Our Activities</h3>
+				<h3 class="heading" style="color:#333;text-align:center;font-family:Lobster;display:inline-block;">Our Activities</h3>
 				<div class="line-after"></div>
 				<div style="text-align:center;">WHATS IN IT FOR YOU?</div>
 			</div>
@@ -240,5 +303,6 @@
 	</footer>
 	<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script	src="scripts.js"></script>
 </body>
 </html>
